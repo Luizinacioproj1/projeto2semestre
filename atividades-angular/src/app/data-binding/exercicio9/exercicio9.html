@@ -1,0 +1,19 @@
+<h2>Exercício 9 - Controle de Estoque</h2>
+
+<p>Quantidade em estoque: {{ estoque }}</p>
+
+<button (click)="adicionar()">
+  Adicionar produto
+</button>
+
+<button (click)="remover()" [disabled]="estoque === 0">
+  Remover produto
+</button>
+
+<p *ngIf="estoque === 0">
+  Produto esgotado!
+</p>
+
+<p *ngIf="estoque > 0">
+  Produto disponível.
+</p>

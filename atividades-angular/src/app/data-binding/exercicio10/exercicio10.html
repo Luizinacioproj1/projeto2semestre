@@ -1,0 +1,15 @@
+<h2>Exercício 10 - Login Simulado</h2>
+
+@if (usuarioLogado) {
+  <p>Usuário está logado.</p>
+
+  <button (click)="sair()">
+    Sair
+  </button>
+} @else {
+  <p>Usuário não está logado.</p>
+
+  <button (click)="entrar()">
+    Entrar
+  </button>
+}

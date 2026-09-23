@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-exercicio5',
+  imports: [],
+  templateUrl: './exercicio5.html',
+  styleUrl: './exercicio5.css'
+})
+export class Exercicio5 {
+  curtidas = 0;
+
+  adicionarCurtida() {
+    this.curtidas++;
+  }
+}

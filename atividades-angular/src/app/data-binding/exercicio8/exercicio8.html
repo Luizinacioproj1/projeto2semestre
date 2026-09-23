@@ -1,0 +1,36 @@
+<h2>Exercício 8 - Cadastro de Produto</h2>
+
+<label for="produto">Produto:</label>
+<input
+  id="produto"
+  type="text"
+  [(ngModel)]="produto"
+  placeholder="Digite o produto"
+>
+
+<br><br>
+
+<label for="preco">Preço:</label>
+<input
+  id="preco"
+  type="number"
+  [(ngModel)]="preco"
+  min="0"
+>
+
+<br><br>
+
+<label for="quantidade">Quantidade:</label>
+<input
+  id="quantidade"
+  type="number"
+  [(ngModel)]="quantidade"
+  min="0"
+>
+
+<h3>Resumo</h3>
+
+<p>Produto: {{ produto }}</p>
+<p>Preço: R$ {{ preco }}</p>
+<p>Quantidade: {{ quantidade }}</p>
+<p>Total: R$ {{ total }}</p>
